@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head>
+    <title>WebCampBackendNew</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="008F0+UAc6dFvowlVChTV6P4HcgIeWTtG5SeLF1A/L2buuMZESDu8jWdJKoJSlEKqpzIaeXeAhhjCz9o9+pAXg==">
+
+    <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload">
+    <script src="/assets/application-4e370d3723b6f204426a9414077d365ea07814cce5619ae24fb7e581988f19ed.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <p id="notice">Book was successfully created.</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+
+</p>
+
+<p>
+  <strong>Body:</strong>
+<%= @book.body %>
+</p>
+
+
+<%= link_to "Edit" ,edit_book_path(@book.id) %>
+  <%= link_to "Back" ,books_path %>
+
+</body></html>
